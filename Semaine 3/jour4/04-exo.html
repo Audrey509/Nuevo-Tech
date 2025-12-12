@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Action1</button>
+    <button>Action2</button>
+    <p data-show="true">1er p</p>
+    <p>2eme p</p>
+
+    <script>
+
+    let button = document.querySelectorAll("button");
+    let p = document.querySelectorAll("p");
+
+    
+    function faire_disparaitre_p1(){
+        let disparaitre_p1 = p[0];
+        let is_visible = disparaitre_p1.dataset.show;
+        if(is_visible == "true"){
+               disparaitre_p1.style["display"] = "none";
+               disparaitre_p1.dataset.show = "false";
+        } else {
+                disparaitre_p1.style["display"] = "block";
+                disparaitre_p1.dataset.show = "true";
+        }
+    }
+    button[0].addEventListener("click" , faire_disparaitre_p1 );
+    
+    
+    
+    
+    function changer_couleur_p2(){
+        let button = document.querySelectorAll("button");
+        p[1].style["color"] = "red";
+    }
+
+    button[1].addEventListener("click" , changer_couleur_p2 );
+
+    </script>
+
+</body>
+</html>
+
+
+

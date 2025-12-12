@@ -1,0 +1,163 @@
+
+
+
+
+:root{
+    --primary:#007db3;
+    --secondery:#7F7F7F;
+    --alert:#f50100;
+    --warning:#ca9263;
+}
+
+body{
+    font-family:"roboto",sans-serif;
+    color:var(--secondery);
+}
+
+.center{
+    margin:0 auto;
+    width: 960px;
+}
+
+html,h1,h2,h3,p,ul,li{
+    margin:0;
+    padding:0;
+}
+ul,li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color: unset;
+}
+
+
+
+.header{
+text-align:center;
+margin-bottom:1.5rem;}
+
+
+
+.header_link{
+    color:white;
+}
+/*fin mise en page header*/
+
+/*mise en page du main de la page*/
+h1{
+    text-align:center;
+    color:var(--primary);
+    font-weight: 400;
+    font-size:2.8em;
+    border-bottom:1px solid dotted var(--secondery);
+    padding-bottom:0.8rem;
+    margin-bottom:1.5rem;
+}
+
+h2{
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    font-weight: 400;
+}
+.article{
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--secondery);
+    margin-bottom: 1.2rem;
+}
+.article_titre{
+margin-bottom:1.2rem;
+font-weight: 400;
+}
+
+.article.contenu{
+display:flex;
+align-items: flex-start;
+gap:20px;
+}
+
+.article_text{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.article_text p{
+    margin-bottom: 1rem;
+}
+
+.header_link{
+border-radius: 1rem;
+background-color: var(--primary);
+padding:0.6rem 0.8rem;
+color:white;
+margin-top: 0.5rem;
+}
+
+.important{
+   color: var(--alert);
+   font-weight: 800;
+}
+.attention{
+    color: var(--warning);
+    font-weight: 800;
+}
+
+table{
+    border: 1px solid var(--secondery);
+    border-collapse: collapse;
+    color:black
+}
+
+th, td{
+    border: 1px solid var(--secondery);
+    padding: 0.5rem 1rem;
+}
+tbody tr:nth-child(2n - 1){
+    background-color:#aaa;
+}
+
+.apropos{
+    margin:1.5rem 0;
+    background-size: cover;
+    background: url("Fond_A_propos.jpg");
+    height: 500px;
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+}
+
+.apropos article{
+    background-color: white;
+    width: 300px;
+    padding: 1rem;
+}
+
+.apropos_titre{
+    font-weight: 400;
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+.contact_link{
+    color:var(--primary);
+}
+.contact_form{
+    background: url("planisphere.jpg");
+    height: 300px;
+    padding:2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.contact_form div{
+    display: grid;
+    gap: 20px;
+}
+
+.contact_btn{
+    grid-column:1/-1;
+    justify-self: center;
+
+}

@@ -1,0 +1,154 @@
+body, h1, h2, h3, p{
+margin: 0;
+padding: 0;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+:root{
+    --primary:#136c72;
+    --secondary:#23424a;
+    --violet:#a285b0;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    
+}
+header{
+    background-color: var(--primary);
+}
+.header-container{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.presentation-container{
+    display: flex;
+    gap:20px;
+}
+
+.container-footer{
+    display: flex;
+    padding: 2rem;
+    gap: 20px
+}
+.presentation-img{
+    width: 300px;
+}
+.footer-text{
+    width: calc(100% -  300px - 20px);
+}
+
+
+.crl{
+    font-size: 30px;
+    font-weight:700 ;
+}
+
+.left-header{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+.si{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    
+    
+}
+.boutton-sign-up{
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5pX;
+    color: var(--primary);
+}
+
+.main-presentation{
+    background-color: var(--secondary);
+    color: white;
+    padding: 2rem ;
+}
+
+.main-box-boutton{
+ padding: 20px;
+ justify-content:start;
+}
+.main-boutton{
+    background-color:#38cfd9;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 5pX;
+    color:var(--primary);
+    font-weight: 800;
+}
+
+
+
+.footer-text-titre{
+    color: var(--violet);
+}
+.footer-text-p{
+gap: 30px;
+}
+
+.footer-list{
+     width: 300px;
+     background-color: var(--primary);
+     text-align: center;
+     gap: 50px;
+     color:white;
+    
+}
+
+@media screen and (max-width:767px){
+    .img-burger{
+        background-color: gray;
+    }
+
+
+   .header-container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+  }
+
+  .main-boutton{
+     display: contents;
+     gap: 20px;
+  }
+
+  .presentation-img{
+     object-fit: cover;
+    size-adjust: initial;
+  }
+}
+
+
+  .presentation .container .detail .container{
+        display: contents;
+        gap: 20px;
+    }
+    .presentation_img{
+        object-fit: cover;
+        width: 200px;
+    }
+    
+    .details_list{
+       margin-top: 0;
+       width: 200px !important;
+       box-sizing:border-box;
+    }

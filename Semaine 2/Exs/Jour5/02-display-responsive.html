@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border:1px solid blue;
+        }
+
+        @media screen and  (min-width:500px){
+            header{
+                display: flex;
+                justify-content: space-between;
+            }
+            /* par defaut une balise html prend la largeur de son contenu
+            lorsqu'il est en display flex*/
+
+            li{
+                width: 200px;
+            }
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://placehold.co/120x70" alt="">
+       <!-- ul>li*4>lorem1-->
+        <ul>
+            <li>Lorem.</li>
+            <li>Est.</li>
+            <li>Repellendus.</li>
+            <li>Odit?</li>
+        </ul>
+    </header>
+</body>
+</html>

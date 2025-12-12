@@ -1,0 +1,35 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+.body{
+    font-family:"roboto",sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-monster{
+    color: #007bff;
+}
+
+.nav-search{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font:1.2em sans-serif;
+
+    display: flex;
+}
+
+ 
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap:15px;
+}

@@ -1,0 +1,252 @@
+/*
+ajouter une police de caractère depuis le site Google Fonts
+Roboto
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* reset des styles du navigateur */
+
+body, h1,h2, h3, p , nav {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:unset; 
+}
+
+/* fin reset des styles du navigateur */
+
+
+/* styles globaux */
+
+:root{
+    --primary: #5a2a73 ;
+    --secondary: #ffefff ;
+    --secondary-2: #a678b1 ;
+}
+
+body{
+    font-family: "Roboto" , sans-serif;
+    color:black; 
+}
+
+h1{
+    color : var(--primary);
+}
+
+h2, h3{
+    color:var(--secondary-2);
+}
+
+.link{
+    color: white ;
+    text-transform: uppercase;
+    background-color: var(--primary);
+    padding: 1rem 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* fin styles globaux */
+
+header{
+    text-align: center;
+}
+
+.header_logo{
+    margin: 1rem 0 3rem 0;
+}
+
+.header_nav{
+    background-color: var(--primary);
+    padding: 1rem 0;
+}
+
+.header_menu{
+    width: 750px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header_menu_link{
+    color:white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+h1{
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.presentation{
+    width: 960px;
+    margin: 0 auto;
+}
+.presentation_titre{
+    margin-bottom: 1.5rem;
+}
+
+.presentation_all{
+    display: flex;
+    gap:20px;
+}
+
+.presentation_article{
+    display: flex;
+    gap:20px;
+    width: 700px;
+}
+
+.presentation_article_contenu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.presentation_article_contenu p{
+    margin-bottom: 1rem;
+}
+
+
+.presentation_why_titre{
+    margin-bottom: 1.3rem;
+}
+
+.presentation_why_liste li{
+    list-style: disc;
+    margin-left:1rem;
+}
+
+.teachers{
+     width: 960px;
+    margin: 2rem auto;
+}
+
+.teachers_titre{
+    margin-bottom: 1rem;
+}
+
+.teachers_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.teacher{
+    display: flex;
+    gap:20px;
+    margin-bottom: 2rem;
+}
+
+.teacher_text{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.teacher_text h3{
+    margin-bottom: 1rem;
+}
+
+.teacher_text p{
+    margin-bottom: 1rem;
+}
+
+.planning{
+ width: 960px;
+ margin: 2rem auto;
+}
+
+.planning_titre{
+    margin-bottom: 1rem;
+}
+
+.planning_table{
+    border:1px solid #777; 
+    border-collapse: collapse; 
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.planning_table th, .planning_table td{
+    border:1px solid #777; 
+    padding: 0.4rem ;
+}
+
+.planning_table_head{
+    background-color: var(--primary);
+    color:white;
+}
+
+.planning_table_td_empty{
+    background-color: var(--secondary);
+}
+
+.booking{
+ width: 960px;
+ margin: 2rem auto;
+}
+
+.booking_titre{
+    margin-bottom: 1rem;
+}
+
+.booking_form{
+    border : 1px solid black ;
+    padding: 1rem;
+}
+
+.booking_form_row{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.booking_form_input{
+    width: 300px;
+    padding: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.booking_form_select{
+    background-color: white;
+    border:1px solid black;
+    width: 200px;
+    padding: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.booking_form_submit{
+    text-align: center;
+}
+
+footer{
+    padding: 2rem;
+    background-color: var(--primary);
+    color: white;
+}
+
+.social{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social_pic{
+    width: 25px;
+    height: 25px;
+}

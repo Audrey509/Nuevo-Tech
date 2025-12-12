@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button data-index="0">Actualités</button>
+    <button data-index="1">Mon CV</button>
+    <button data-index="2">Me contacter</button>
+
+     <div>
+      <ul>
+        <li>je découvre le JS</li>
+        <li>création d'une page dynamique</li>
+      </ul>
+    </div>
+    
+    <div>
+        <h1>Mon CV</h1>
+        <p>je suis un developpeur  spécialisé en html, css et javascript.</p>
+    </div>
+    
+    <div>
+        <h1>Me contacter</h1>
+        <form action="">
+            <input type="text" placeholder="votre@email.fr">
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+   
+   
+   <script>
+        let buttons = document.querySelectorAll("button");
+        let div = document.querySelectorAll("div");
+      
+        // masquer toutes les divs sauf la première au chargement de la page
+        for(let i = 1 ; i < div.length ; i = i + 1){
+               div[i].style["display"] = "none";
+        }
+        
+
+       //sur chaque bouton
+       // si je clique sur le 1er  bouton je veux afficher le 1er div et masquer les autres
+       // si je clique sur le 2er  bouton je veux afficher le 2er div et masquer les autres
+      // si je clique sur le 3er  bouton je veux afficher le 3er div et masquer les autres
+
+      function animation( e ){
+      //parametre qui permet d'avoir des informations sur la balise 
+      // sur laquelle je suis entrain de travailler
+      let index = e.target.dataset.index;
+      console.log(index);
+      
+      for(let i = 0 ; i < div.length ; i = i + 1){
+            if(index == i){
+                div[i].style["display"] = "block";
+            } else {
+                div[i].style["display"] = "none";
+            }
+      }
+    }
+     
+      
+    for(let i = 0 ; i < buttons.length ; i = i + 1){
+        buttons[i].addEventListener("click" , animation);
+
+
+    }
+
+    /*let p = document.querySelectorAll("p");
+
+    p.innerText
+    p.innerHTML
+    p.style
+    p.addEventListener
+    p.dataset */
+
+    //ctrl + maj + / pour commenter plusieurs lignes en même temps
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

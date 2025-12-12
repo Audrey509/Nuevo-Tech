@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button data-index="0">Mon CV</button>
+    <button data-index="1">Mes photos</button>
+    <div>
+        <h1>lorem</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime corrupti minima saepe et porro id tempora expedita quidem ducimus, nesciunt unde iure aperiam, nam, accusantium quia labore commodi? Qui.
+        Eos tempore veniam assumenda in nisi, iusto facere iure rerum porro sapiente. Atque eveniet esse maxime earum mollitia nesciunt voluptatem recusandae dolore, tempore adipisci quis eum neque, tenetur aliquam dolores.
+        Quos voluptatem, facere cumque aliquid dignissimos quasi rem vitae porro animi rerum perspiciatis distinctio beatae dicta nemo, molestias odit odio. Ab deserunt nemo voluptatem ratione adipisci odit animi quo voluptatum.
+        Ducimus amet adipisci fugit iusto, rem, incidunt dolorum laboriosam tempora aliquid quos nemo quas maiores iure vitae nulla repudiandae magni obcaecati quod eius ad deserunt odit animi dolorem! Inventore, cupiditate.</p>
+    </div>
+    
+    <div>
+     <img src="https://placehold.co/600x400" alt="">
+     <img src="https://placehold.co/600x400" alt="">
+    </div>
+
+    <script>
+    
+    let buttons = document.querySelectorAll("button");
+    let div = document.querySelectorAll("div");
+    
+    for(let i = 1 ; i < div.length ; i = i + 1){
+        div[i].style["display"] = "none";
+    }
+    
+   
+    function systeme_onglet( e ){
+        let index = e.target.dataset.index;
+        for(let i = 0 ; i < div.length ; i = i + 1){
+            if(index == i){
+                div[i].style["display"] = "block";
+            } else {
+                div[i].style["display"] = "none";
+            }
+        }
+    }
+    
+
+    for(let i = 0 ; i < buttons.length ; i = i + 1){
+        buttons[i].addEventListener("click" , systeme_onglet );
+    }  
+
+   //pour que le paragraphe se mette dans un seul ligne
+  //parametre / ou pallette de commende /bounded
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+    </body>
+</html>

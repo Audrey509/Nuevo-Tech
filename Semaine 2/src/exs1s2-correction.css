@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com);
+@import url(https://fonts.gstatic.com);
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap);
+
+
+body, h1, h2, p, nav{
+    margin:0;
+    padding:0;
+}
+
+ul,li{
+     margin:0;
+    padding:0;
+
+}
+
+a{
+color:unset
+}
+
+:root{
+    --primary-color:#543385;
+    --secondary-color:#007d91;
+    --background-color:#007fad;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    color:black
+}
+
+.header{
+    padding: 0.5em 0.7rem;
+}
+
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_form{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+
+.header_form_box{
+    border: 1px solid var(--primary-color);
+    padding:0.5em;
+    display:flex;
+    border-radius: 5px;
+}
+
+.header_form_svg{
+margin-right: 5px;
+color: var(--primary-color);
+}
+
+
+.header_menu_employee{
+    display: flex;
+    gap: 15px;
+}
+
+.header_menu_main{
+   display: flex;
+   gap: 15px;
+}
+
+
+.price{
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.price_cards{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.card{
+    width:300px ;
+    border: 1px solid #aaa;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 4px 4px ;
+
+}

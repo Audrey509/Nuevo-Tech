@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id ="slide-diapo">
+        <img src="https://placehold.co/600x400" width="800" height="450">
+    </div>
+
+     <button onclick="prev()">Précédent</button>
+     <button onclick="next()">Suivant</button>
+
+  <script>
+let images = [
+    "https://placehold.co/600x400",
+    "https://placehold.co/600x401",
+    "https://placehold.co/600x402",
+    "https://placehold.co/600x403",
+    "https://placehold.co/600x404"
+];
+
+let i = 0;
+let img = document.querySelector("#slide-diapo img")[i];
+
+function diap(i){
+    i =(i + images.length) % images.length;
+    img.src = images[i];
+}
+
+function next(){
+    i++;
+    diap(i);
+}
+function prev(){
+    i--;
+    diap(i);
+}
+
+
+setInterval(()=>{
+    next();
+}, 3000);
+
+  </script>
+
+
+
+
+
+
+
+</body>
+</html>

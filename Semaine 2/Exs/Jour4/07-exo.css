@@ -1,0 +1,136 @@
+
+/*display:flex; => mettre les phrases ou les element aligné (cote a cote) */
+/*gap => ser a espacé les paragraphe ou les element*/
+/*margin/padding => mettrede le marge a l'exterieur de l'element*/
+
+/*JUSTIFY-CONTENT
+justify-content: flex tart; = sa mes a gauche
+justify-content:flex-end; = sa mes a droite (a la fin)
+justify-content: center; = sa mes au centre
+justify-content: space-betwen; = l'image a gauche et la liste a droite 
+*/
+
+
+
+
+:root{
+    --primary:rgb(58, 144, 167);
+    --secondary:rgb(45, 45, 131);
+    --secondary-2:white;
+}
+
+body{
+    font-family: sans-serif;
+}
+.header-lorem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    background-color: var(--primary);
+    width: 100%;
+    padding: 20px 0;
+}
+.boutton-header{
+background-color: var(--secondary);
+color: var(--primary);
+padding:8px 15px;
+border: none;
+border-radius: 20px;
+text-decoration: none;
+display: inline-block;
+
+}
+.header-lorem{
+display: flex;
+list-style: none;
+margin-right: 15px;
+gap:20px;
+}
+.main-resp{
+    background-color: var(--secondary);
+    color: var(--secondary-2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/* ????*/
+    padding: 50px 10%;
+    /*gap: 50px;*/
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    box-sizing:border-box ;
+    
+}
+
+.p-boutton{
+    flex: 1;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-items:left;
+}
+.p-boutton h1{
+    left: 30px;
+    
+}
+.p-button p{
+    margin-bottom: 20px;
+}
+.img_main{
+max-width: 100%;
+height: auto;
+display: block;
+float: right;
+width: 35%;
+margin-left: 20px;
+}
+
+
+.lire-la-suite{
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    margin-top: 0;
+}
+
+.block-blue{
+    background-color: var(--primary);
+   /* color: var(--secondary);*/
+    justify-content: center;
+    size-adjust: 20px;;
+    /*display: flex;*/
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+.block-blue section{
+    flex: 1;
+    margin-right: 20px;
+    align-self: flex-start;
+
+}
+.block-blue section:last-child{
+    margin-right: 0;
+}
+.block-blue h1{
+    margin: 10px;
+}
+
+@media screen and (min-width:500px) {
+    .header-lorem{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+

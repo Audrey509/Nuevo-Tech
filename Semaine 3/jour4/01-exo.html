@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+    <p></p>
+    <p></p>
+    <h2></h2>
+    <p></p>
+    <p></p>
+    
+
+    <script>
+
+        let h1 = document.querySelector("h1");
+        let h2 = document.querySelectorAll("h2");
+        let p = document.querySelectorAll("p");
+
+        function mise_en_forme_first_p( p ){
+           p.innerText = "Lorem ipsum ";
+           p.style["font-size"] = "40px";
+           p.style.color = "pink";
+        }
+
+
+
+        function mise_en_forme_last_p( p ){
+           p.innerHTML = "Bonjour <br> comment t'aller vous?";
+        }
+
+        h1.innerText = "Start";
+        h1.style.color = "green";
+
+        h2.innerText = "Conclusion";
+
+
+
+        for(let i = 0; i < p.length; i = i + 1) {
+        if( i <= 2 ){
+           mise_en_forme_last_p( p[i] );
+        } else {
+           mise_en_forme_first_p( p[i] );
+        }
+    
+        }
+      
+
+        p[0].innerText = "Lorem ipsum ";
+        p[0].style["font-size"] = "40px";
+        p[0].style.color = "pink";
+
+        p[1].innerText = "Lorem ipsum ";
+        p[1].style["font-size"] = "40px";
+        p[1].style.color = "pink";
+
+        p[2].innerText = "Lorem ipsum ";
+        p[2].style["font-size"] = "40px";
+        p[2].style.color = "pink";
+
+        h2[0].innerText = "Conclusion";
+
+        p[3].innerHTML = "Bonjour <br> comment t'aller vous?";
+        p[4].innerHTML = "Bonjour <br> comment t'aller vous?";
+
+    </script>
+</body>
+</html>

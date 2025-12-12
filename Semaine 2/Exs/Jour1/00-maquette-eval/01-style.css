@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+selecteur {
+    propriété : valeur ;
+    propriété : valeur ;
+}
+*/
+
+/* remise à zéro des styles html */
+
+/* enlever toutes les marges la page */
+
+html, h1, h2,h3 , p , ul, li {
+    margin: 0; /* marge extérieure */
+    padding: 0; /* margin intérieure */
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: unset; 
+}
+
+/* fin remise à zéro des styles html */
+
+/* Styles globaux */
+/* google font */
+
+:root{
+ --primary: #007db3 ;
+ --secondary : #7f7f7f ;
+ --alerte : #f50100 ;
+ --warning : #ca9263 ; 
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    color:var(--secondary); /* par défaut tous les textes auront une couleur grise */
+}
+/* palette des couleurs */
+
+
+
+.center{
+    margin: 0 auto ;  /*  marge extérieure de la balise 0px en haut en bas  autant à gauche et à droite */
+    width: 960px;
+}
+
+/* fin Styles globaux */
+
+
+/* mise ne page du header */
+
+header{
+    text-align: center; /* centrer le logo*/
+    margin-bottom: 1.5rem; /* 24px */
+}
+.header_logo{
+    margin-bottom:  1.5rem; /* 24px */ 
+}
+.header_nav{
+    background-color: var(--primary);
+}
+.header_menu{
+    display: flex; /* mettre les li l'une à côté de l'autre*/
+    justify-content: space-between; /* espacer horizontalement les li avec le même espace */
+    padding: 1rem 0.5rem;
+    /*
+        padding-top : 1rem ;
+        padding-bottom : 1rem;
+        padding-right : 0.5rem;
+        padding-left : 0.5rem;
+    */
+}
+.header_link{
+    color:white;
+}
+
+/* fin mise ne page du header */
+
+/* mise ne page du main de la page */
+
+
+h1{
+    text-align: center;
+    color : var(--primary);
+    font-weight: 400;
+    font-size: 2.8em;
+    border-bottom: 1px dotted var(--primary);
+    padding-bottom: 0.8rem;
+    margin-bottom: 1.5rem; /* 24px */ 
+}
+
+h2{
+    text-transform:  uppercase; /* lettre en majuscule UPPERCASE lettre en minuscule lowercase capitalize 1ère lettre en majucule et les autres en minuscule */
+    padding-bottom: 1.5rem;
+    font-weight: 400;
+
+}
+
+article {
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--secondary);
+    margin-bottom: 2rem !important;
+}
+
+.article_titre{
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+}
+
+.article_contenu{
+    display: flex;
+    align-items: flex-start;
+    gap:20px; 
+}
+
+.article_texte{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.article_texte p {
+    margin-bottom: 1rem;
+}
+
+.article_link{
+    border-radius: 1rem;
+    background-color: var(--primary);
+    padding: 0.6rem 0.8rem;
+    color :white;
+    margin-top: 0.5rem;
+}
+
+.important{
+    color : var(--alerte);
+    font-weight: 800;
+}
+.attention{
+    color : var(--warning) ; 
+    font-weight: 800;
+}
+
+table{
+    border:1px solid var(--secondary);
+    border-collapse: collapse;
+    color: black ;
+}
+
+th, td{
+    border:1px solid var(--secondary);
+    padding: 1rem  0.5rem;
+}
+
+tbody tr:nth-child(2n -1){
+    background-color: #aaa;
+}
+
+.apropos{
+    margin: 1.5rem 0;
+    background: url("fond-apropos.jpg");
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.apropos article{
+    background-color: white;
+    width: 300px;
+    padding: 1rem ;
+}
+
+.apropos_titre{
+    font-weight: 400;
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+.contact_link{
+    color: var(--primary);
+}
+
+.contact_form{
+    background: url("planisphere.jpg");
+    height: 300px;
+    padding: 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+
+.contact_form div{
+    display: grid;
+    gap:20px;
+}
+
+.contact_btn{
+    grid-column: 1/-1;
+    justify-self: center;
+    align-self: center;
+}
+
+.contact_form_btn{
+    padding: 0.5rem 1.2rem;
+    border-radius: 1rem;
+    color:white;
+    background-color: var(--primary);
+    font-size: 1.5em;
+    border:none;
+}

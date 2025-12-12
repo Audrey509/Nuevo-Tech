@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Embed+code:wght@400;700&display=swap');
+
+
+
+.html, h1, h2,h3 , p , ul, li {
+    margin: 0; 
+    padding: 0; 
+}
+
+.ul, li{
+    list-style: none;
+}
+
+.a{
+    text-decoration: none;
+    color: unset; 
+}
+
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    color:var(--secondary); 
+}
+
+
+.header{
+    text-align: center; 
+    margin-bottom: 1.5rem; 
+}
+
+.move{
+    font-family: 'Embed code', sans-serif;
+}
+.academy{
+    font-family: 'Embed code', sans-serif;
+    color: #973569;
+}
+.logo{
+    margin-left: 200px; 
+    margin-top: -50px;
+}
+.baniere{
+    background-color: #973569;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banniere-lettre{
+    display: flex;
+    gap: 200px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container-about-lettre{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: #973569;
+    font-size: 50px;
+}
+.lettre-about{
+    color: #973569;
+    margin-bottom: 20px;
+}
+
+
+.lettre-about-lorem{
+    margin-left: 220px; 
+    margin-top: -200px;
+    padding-left: 20px;
+}
+.lettre-2about-lorem{
+margin-left: 240px;
+}
+
+
+.boutton{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.boutton-about{
+    background-color: #973569;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 220px; 
+    display: flex;
+}
+
+
+.why-us{
+    text-align: right; 
+    margin-right: 200px;
+    padding-bottom: 200px;
+    margin-top: -190px;
+    
+}
+.lettre-why{
+   margin-right: 75px;
+}
+.why-us-lorem{
+  padding: 20px;
+  }
+
+  .why-lorem{
+    margin-bottom: 10px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+
+
+.lettre-our-teacher{
+    margin-top: -220px;
+    
+}
+
+
+.img-julia{
+   margin-top: 20px;
+}
+
+.teachers{
+    display: flex;
+    padding: 20px;
+}
+.teachers-a{
+display: flex;
+text-align: left;
+}
+
+.name-teachers{
+    padding: 20px;
+}
+.p-teachers{
+    padding: 20px;
+    display: flex;
+    margin: 50px;
+    
+}
+.ul-teachers{
+    padding: 20px;
+    display: flex;
+}

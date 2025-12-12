@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <p></p>
+    <p></p>
+   
+   <script>
+     //document 
+     //mot clé du langage javascript
+     //crée automatquement par javascript
+     //objet
+     //document = {
+     // p : [p1,p2,p3]
+     //}
+
+     let p = document.querySelectorAll("p");
+     console.log(p); // p tableau qui contient l'ensemble des balise p dans la page web
+
+     //remplir le text "bonjour" le 1er p de la page
+     p[0].innerText = "Bonjour";
+
+     //remplir le 2eme p de la page zvec la page "Salut"
+     p[1].innerText = "Salut";
+
+     //remplir le 3eme text et dernier p de la page avec le text "conclusion"
+     p[2].innerText = "Conclusion";
+
+
+
+
+
+
+    </script>
+</body>
+</html>
